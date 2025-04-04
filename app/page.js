@@ -20,34 +20,34 @@ import Image from "next/image";
 
 const faqs = [
   {
-    question: "What is ZCRUM?",
+    question: "What is TASKNIFY?",
     answer:
-      "ZCRUM is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
+      "TASKNIFY is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
   },
   {
-    question: "How does ZCRUM compare to other project management tools?",
+    question: "How does TASKNIFY compare to other project management tools?",
     answer:
-      "ZCRUM offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
+      "TASKNIFY offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
   },
   {
-    question: "Is ZCRUM suitable for small teams?",
+    question: "Is TASKNIFY suitable for small teams?",
     answer:
-      "Absolutely! ZCRUM is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from ZCRUM's features.",
+      "Absolutely! TASKNIFY is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from TASKNIFY's features.",
   },
   {
-    question: "What key features does ZCRUM offer?",
+    question: "What key features does TASKNIFY offer?",
     answer:
-      "ZCRUM provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
+      "TASKNIFY provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
   },
   {
-    question: "Can ZCRUM handle multiple projects simultaneously?",
+    question: "Can TASKNIFY handle multiple projects simultaneously?",
     answer:
-      "Yes, ZCRUM is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes ZCRUM ideal for organizations juggling multiple projects or clients.",
+      "Yes, TASKNIFY is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes TASKNIFY ideal for organizations juggling multiple projects or clients.",
   },
   {
     question: "Is there a learning curve for new users?",
     answer:
-      "While ZCRUM is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
+      "While TASKNIFY is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
   },
 ];
 
@@ -160,7 +160,7 @@ export default function Home() {
             Ready to Transform Your Workflow?
           </h3>
           <p className="text-xl mb-12">
-            Join thousands of teams already using ZCRUM to streamline their
+            Join thousands of teams already using TASKNIFY to streamline their
             projects and boost productivity.
           </p>
           <Link href="/onboarding">
