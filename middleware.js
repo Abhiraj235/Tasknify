@@ -10,27 +10,26 @@ const isProtectedRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware((auth, req) => {
-  if (!auth().userId && isProtectedRoute(req)) {
+  const pathname = req.nextUrl.pathname;
+
+  if (!auth().userId && isProtectedRoute(pathname)) {
     return auth().redirectToSignIn();
   }
 
   if (
     auth().userId &&
     !auth().orgId &&
-    req.nextUrl.pathname !== "/onboarding" &&
-    req.nextUrl.pathname !== "/"
+    pathname !== "/onboarding" &&
+    pathname !== "/"
   ) {
-    return NextResponse.redirect(new URL("/onboarding", req.url));
+    const onboardingUrl = new URL("/onboarding", req.url);
+    return NextResponse.redirect(onboardingUrl);
   }
 });
 
 export const config = {
   matcher: [
-    // Skip Next.js internals and all static files, unless found in search params
     "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
-    // Always run for API routes
     "/(api|trpc)(.*)",
   ],
 };
-
-
